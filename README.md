@@ -39,4 +39,4 @@ Contributions are welcome! Please feel free to open an issue or submit a pull re
 
 ## Contact
 
-For questions or feedback, please contact Sean Gan at gan.sean@pm.me.
+For questions or feedback, please contact me at gan.sean@pm.me.
