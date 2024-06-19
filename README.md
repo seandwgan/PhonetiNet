@@ -23,7 +23,7 @@ PhonetiNet is an R/python-based project that analyzes and visualizes the phoneti
 5. **Explore the results:**
    - The script will print the optimal cutoff value for the network graph.
    - A CSV file (`phonetic_overlap.csv`) containing pairwise phonetic overlap values will be generated.
-   - An interactive network graph will be displayed, allowing you to explore the relationships between languages.
+   - (Soon) An interactive network graph will be displayed, allowing you to explore the relationships between languages.
 
 ## Data Source
 
