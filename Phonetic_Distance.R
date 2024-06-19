@@ -18,8 +18,8 @@
 library(tidyverse) # (Wickam et al., 2019)
 
 # 1. Read the PHOIBLE data (Moran & McCloy, 2019)
-df_phoible <- read.csv("/Users/seangan/My Drive (seangan518@gmail.com)/Research
-                       /Language Differences/PHOIBLE/cldf/values.csv")
+file <-     # paste file Pathname for 'values.csv' (PHOIBLE)
+df_phoible <- read.csv(file)
 
 # Reshape the data into a wider format using 'pivot_wider'
 # This transforms the data so each language becomes a column,
@@ -65,36 +65,10 @@ df.phonetic.overlap <- map_dfr(language_pairs, function(pair) {
   tibble(lang1 = pair[1], lang2 = pair[2], overlap = overlap)
 })
 
-
-##### 3. Optimal Network Cutoff Determination #####
-
-# Load the 'igraph' package for network analysis (Csárdi et al., 2024)
-library(igraph)
-
-# Sort the overlap data frame in descending order by overlap
-df_sorted <- df.phonetic.overlap[order(-df.phonetic.overlap$overlap), ]
-
-# Initialize the threshold for overlap
-threshold <- 1.0
-
-# Find the optimal cutoff for a fully connected network graph
-while (threshold > 0) {
-  # Filter the data frame based on the current threshold
-  filtered_df <- df_sorted[df_sorted$overlap >= threshold, ]
-  
-  # Create a network graph from the filtered data
-  G <- graph_from_data_frame(filtered_df[, c("lang1", "lang2")], directed = FALSE)
-  
-  # Check if the graph is connected (all nodes can reach each other)
-  if (is_connected(G)) {
-    break  # If connected, we found our cutoff
-  } else {
-    threshold <- threshold - 0.01  # Decrease the threshold and try again
-  }
-}
-
-# Print the optimal cutoff value
-cat("Optimal Cutoff:", threshold, "\n")
+# Save df.phonetic.overlap in .csv format.
+file <-    # Define file path and name in the format 
+           # [folder pathname]/phonetic_overlap.csv
+write.csv(df.phonetic.overlap, file)
 
 
 ##### References #####
