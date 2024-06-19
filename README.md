@@ -2,7 +2,7 @@
 
 ## Description
 
-PhonetiNet is an R-based project that analyzes and visualizes the phonetic similarities between languages. It applies the PHOIBLE database, a comprehensive collection of phonetic inventories, to calculate the pairwise phonetic overlap between languages. The project then constructs a network graph where languages are connected based on their shared phonetic features, offering a visual representation of their relationships and clusters.
+PhonetiNet is an R/python-based project that analyzes and visualizes the phonetic similarities between languages. It applies the PHOIBLE database, a comprehensive collection of phonetic inventories, to calculate the pairwise phonetic overlap between languages. The project then constructs a network graph where languages are connected based on their shared phonetic features, offering a visual representation of their relationships and clusters.
 
 ## Key Features
 
