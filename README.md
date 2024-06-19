@@ -1,4 +1,4 @@
-# PhonemeNet: Visualising Phonetic Distance Between Languages
+# PhonetiNet: Visualising Phonetic Distance Between Languages
 
 This library features tools for generating network maps of phonetic distance between langauges:
 
