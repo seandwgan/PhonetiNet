@@ -5,9 +5,7 @@
 # This R script analyzes phonetic distance between languages using the 
 # PHOIBLE database. It computes the overlap of phonetic features 
 # between pairs of languages as a percentage of the total number of unique
-# phonemes within each pair. For network analysis, the script also determines 
-# an optimal edge width cutoff to enhance readability by keeping edge number
-# low, while ensuring that all nodes are connected to at least one other node.
+# phonemes within each pair.
 
 # The PHOIBLE repository of cross-linguistic phonological inventory data forms
 # the basis of the phonetic distance calculations, and is available via 
@@ -116,12 +114,6 @@ cat("Optimal Cutoff:", threshold, "\n")
 # <https://doi.org/10.21105/joss.01686>.
 
 # 3.
-# Csárdi G, Nepusz T, Traag V, Horvát Sz, Zanini F, Noom D, Müller K (2024). 
-# _igraph: Network Analysis and Visualization in R_.
-# doi:10.5281/zenodo.7682609 <https://doi.org/10.5281/zenodo.7682609>, 
-# R package version 2.0.3, <https://CRAN.R-project.org/package=igraph>.
-
-# 4.
 # R Core Team (2023). R: A language and environment for statistical computing. 
 # R Foundation for Statistical Computing, Vienna, Austria. 
 # URL https://www.R-project.org/.
