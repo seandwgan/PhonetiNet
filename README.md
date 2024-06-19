@@ -21,8 +21,8 @@ PhonetiNet is an R/python-based project that analyzes and visualizes the phoneti
     - Define the Pathname for `values.csv` in `Phonetic_Distance.R`
 4. **Run the scripts:**  Execute `Phonetic_Distance.R` and `Optimal_Edge_Width.R` in R or RStudio.
 5. **Explore the results:**
-   - The script will print the optimal cutoff value for the network graph.
-   - A CSV file (`phonetic_overlap.csv`) containing pairwise phonetic overlap values will be generated.
+   - `Phonetic_Distance.R` will generate a CSV file (`phonetic_overlap.csv`) containing pairwise phonetic overlap values.
+   - `Optimal_Edge_Width.R` will print the optimal cutoff value for the network graph.
    - (Soon) An interactive network graph will be displayed, allowing you to explore the relationships between languages.
 
 ## Data Source
