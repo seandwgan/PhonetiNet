@@ -43,7 +43,7 @@ total_pairs <- length(language_pairs)  # Get the total number of pairs
 counter <- 0   
 
 # Calculate phonetic overlap for each language pair using 'map_dfr'
-df.phonetic.overlap <- map_dfr(language_pairs, function(pair) {
+df.phonetic.distances <- map_dfr(language_pairs, function(pair) {
   # Extract phonetic features for each language in the pair
   features1 <- na.omit(df_wide_trimmed[[pair[1]]]) #Remove NAs
   features2 <- na.omit(df_wide_trimmed[[pair[2]]]) #Remove NAs
@@ -65,10 +65,13 @@ df.phonetic.overlap <- map_dfr(language_pairs, function(pair) {
   tibble(lang1 = pair[1], lang2 = pair[2], overlap = overlap)
 })
 
-# Save df.phonetic.overlap in .csv format.
+# Save df.phonetic.distances in .csv format.
 file <-    # Define file path and name in the format 
-           # [folder pathname]/phonetic_overlap.csv
-write.csv(df.phonetic.overlap, file)
+           # "[folder pathname]/phonetic_distances.csv"
+write.csv(df.phonetic.distances, file)
+
+#look into how to automatically create a file name and automatically create a
+# a folder and extract the file path.
 
 
 ##### References #####
