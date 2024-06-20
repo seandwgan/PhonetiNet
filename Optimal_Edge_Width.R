@@ -2,7 +2,7 @@
 
 ## Overview
 
-# This script calculates an optimized edge width cutoff to enhance network
+# This script calculates the optimal edge width cutoff to enhance network
 # map readability by keeping edge number low, while ensuring that all nodes are
 # connected to at least one other node.
 
@@ -13,7 +13,7 @@
 library(igraph)
 
 # Sort the overlap data frame in descending order by overlap
-df_sorted <- df.phonetic.overlap[order(-df.phonetic.overlap$overlap), ]
+df_sorted <- df.phonetic.distances[order(-df.phonetic.distances$overlap), ]
 
 # Initialize the threshold for overlap
 threshold <- 1.0
