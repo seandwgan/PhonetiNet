@@ -143,9 +143,7 @@ server <- function(input, output, session) {
       highlighted_node_names <- unique(c(highlighted_edges$from, highlighted_edges$to))
       
       highlighted_node_ids <- V(g)$id[V(g)$name %in% highlighted_node_names]
-      print(highlighted_node_ids)
       
-      ion.highlight <- as.data.frame(as.numeric(nodes$id) %in% highlighted_node_ids)
       # Update node and edge colors (corrected)
       visNetworkProxy("network") %>%
         visUpdateNodes(nodes = data.frame(
