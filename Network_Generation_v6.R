@@ -6,11 +6,11 @@ library(shiny)
 library(dplyr)
 
 # Load your data
-file <-  "/Users/seangan/My Drive (seangan518@gmail.com)/Research/Language Differences/Language Difference/phonetic_distances.csv" #"[phonetic_distances.csv Pathname]"
+file <-   #"[phonetic_distances.csv Pathname]"
 df.phonetic.distances <- read.csv(file)
 
 # Load language names
-file <-  "/Users/seangan/My Drive (seangan518@gmail.com)/Research/Language Differences/PHOIBLE/cldf/languages.csv" #"[languages.csv Pathname]"
+file <-   #"[languages.csv Pathname]"
 df.languages <- read.csv(file)
 df.language.names <- df.languages[, 1:2]
 
@@ -119,7 +119,6 @@ server <- function(input, output, session) {
   highlighted_nodes <- reactiveVal(NULL)
   search_nodes <- reactiveVal(NULL)
   
-  # Observe node click events and update the graph conditionally
   # Observe node click events for highlighting
   observeEvent(input$clicked_node, {
     selected_node(input$clicked_node)
@@ -155,9 +154,9 @@ server <- function(input, output, session) {
           value = ifelse(nodes$id %in% highlighted_node_ids, nodes$size * 10, nodes$size)# Purple for connected nodes
         )) %>%
         visUpdateEdges(edges = data.frame(
-          id = nodes$id,
-          color = ifelse(as.numeric(nodes$id) %in% highlighted_node_ids, "purple", "gray"),
-          value = ifelse(nodes$id %in% highlighted_node_ids, nodes$size * 10, nodes$size)  # Double size for purple nodes
+          id = edges$id,
+          color = ifelse(as.numeric(edges$id) %in% highlighted_node_ids, "purple", "gray"),
+          value = ifelse(edges$id %in% highlighted_node_ids, nodes$size * 10, nodes$size)  # Double size for purple nodes
         ))
     } else {
       # Reset node and edge colors when no node is clicked
