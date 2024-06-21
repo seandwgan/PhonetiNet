@@ -2,7 +2,7 @@
 
 ## Description
 
-PhonetiNet is an R-based project that analyzes and visualizes the phonetic similarities between languages. It applies the PHOIBLE database, a comprehensive collection of phonetic inventories, to calculate the pairwise phonetic overlap between languages. The project then visualises the data an interactive network visualisation tool, which enables searching and sub-network generation.
+PhonetiNet is an R-based project that analyzes and visualizes the phonetic similarities between languages. It applies the PHOIBLE database, a comprehensive collection of phonetic inventories, to calculate the pairwise phonetic overlap between languages. The project then generates an interactive network visualisation tool, with language and phonological searching features, and sub-network generation.
 
 ## Key Features
 
@@ -10,7 +10,7 @@ PhonetiNet is an R-based project that analyzes and visualizes the phonetic simil
 - **Optimal Threshold Determination:** Identifies the optimal threshold of phonetic overlap for including connections in the network graph, ensuring a balance between informativeness and clarity.
 - **Interactive Network App:** Generates an interactive network mapping application that visualizes the phonetic connections between languages, supporting language searching and sub-network generation for focused analyses.
 
-## Usage
+## Getting Started
 
 1. **Clone the repository:** `git clone https://github.com/seandwgan/PhonetiNet.git`
 2. **To use the app**, run `app.R`
