@@ -2,13 +2,13 @@
 
 ## Description
 
-PhonetiNet is an R/python-based project that analyzes and visualizes the phonetic similarities between languages. It applies the PHOIBLE database, a comprehensive collection of phonetic inventories, to calculate the pairwise phonetic overlap between languages. The project then constructs a network graph where languages are connected based on their shared phonetic features, offering a visual representation of their relationships and clusters.
+PhonetiNet is an R-based project that analyzes and visualizes the phonetic similarities between languages. It applies the PHOIBLE database, a comprehensive collection of phonetic inventories, to calculate the pairwise phonetic overlap between languages. The project then visualises the data an interactive network visualisation tool, which enables searching and sub-network generation.
 
 ## Key Features
 
 - **Phonetic Overlap Calculation:**  Computes the proportion of shared phonetic features between all possible pairs of languages in the PHOIBLE dataset.
-- **Network Graph Generation:** Creates an interactive network graph that visualizes the phonetic connections between languages.
 - **Optimal Threshold Determination:** Identifies the optimal threshold of phonetic overlap for including connections in the network graph, ensuring a balance between informativeness and clarity.
+- **Network Graph Generation:** Creates interactive network maps that visualizes the phonetic connections between languages, supporting sub-network generation for focused analyses.
 
 ## Usage
 
@@ -23,7 +23,7 @@ PhonetiNet is an R/python-based project that analyzes and visualizes the phoneti
 5. **Explore the results:**
    - `Phonetic_Distance.R` will generate a CSV file (`phonetic_overlap.csv`) containing pairwise phonetic overlap values.
    - `Optimal_Edge_Width.R` will print the optimal cutoff value for the network graph.
-   - (Soon) An interactive network graph will be displayed, allowing you to explore the relationships between languages.
+   - `Network_Visualization.R` generates interactive network maps.
 
 ## Data Source
 
