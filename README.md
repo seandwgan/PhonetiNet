@@ -8,22 +8,13 @@ PhonetiNet is an R-based project that analyzes and visualizes the phonetic simil
 
 - **Phonetic Overlap Calculation:**  Computes the proportion of shared phonetic features between all possible pairs of languages in the PHOIBLE dataset.
 - **Optimal Threshold Determination:** Identifies the optimal threshold of phonetic overlap for including connections in the network graph, ensuring a balance between informativeness and clarity.
-- **Network Graph Generation:** Creates interactive network maps that visualizes the phonetic connections between languages, supporting sub-network generation for focused analyses.
+- **Interactive Network App:** Generates an interactive network mapping application that visualizes the phonetic connections between languages, supporting language searching and sub-network generation for focused analyses.
 
 ## Usage
 
 1. **Clone the repository:** `git clone https://github.com/seandwgan/PhonetiNet.git`
-2. **Install dependencies:** Ensure you have R and the following packages installed:
-   - `tidyverse`
-   - `igraph`
-3. **Prepare data:** 
-    - Download the PHOIBLE data (`values.csv`) from [https://phoible.org/](https://phoible.org/)
-    - Define the Pathname for `values.csv` in `Phonetic_Distance.R`
-4. **Run the scripts:**  Execute `Phonetic_Distance.R` and `Optimal_Edge_Width.R` in R or RStudio.
-5. **Explore the results:**
-   - `Phonetic_Distance.R` will generate a CSV file (`phonetic_overlap.csv`) containing pairwise phonetic overlap values.
-   - `Optimal_Edge_Width.R` will print the optimal cutoff value for the network graph.
-   - `Network_Visualization.R` generates interactive network maps.
+2. **To use the app**, run `app.R`
+3. **To run your own analyses**, start with `Phonetic_Distance.R`, then follow up with `Optimal_Edge_Width.R` and `Network_Visualization.R`
 
 ## Data Source
 
