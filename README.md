@@ -1,4 +1,4 @@
-# PhonetiNet: Quantifying and Visualizing Phonetic Distance Between Languages
+# PhonetiNet: Quantifying and Mapping Phonetic Distance Between Languages
 
 ## Description
 
