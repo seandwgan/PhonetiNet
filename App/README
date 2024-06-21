@@ -1,5 +1,5 @@
 This folder has the basic architecture to run produce the network mapping application.
 
 To use:
-Download and set as R directory.
+Download into a folder and set as an R directory.
 Open `app.R` and run.
