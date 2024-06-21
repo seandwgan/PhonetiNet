@@ -6,7 +6,7 @@ PhonetiNet is an R-based project that analyzes and visualizes the phonetic simil
 
 ## Key Features
 
-- **Phonetic Overlap Calculation:**  Computes the proportion of shared phonetic features between all possible pairs of languages in the PHOIBLE dataset.
+- **Phonetic Overlap Calculation:**  Computes the proportion of shared phonetic features between all possible language pairs in the PHOIBLE dataset.
 - **Optimal Threshold Determination:** Identifies the optimal threshold of phonetic overlap for including connections in the network graph, ensuring a balance between informativeness and clarity.
 - **Interactive Network App:** Generates an interactive network mapping application that visualizes the phonetic connections between languages, supporting language searching and sub-network generation for focused analyses.
 
